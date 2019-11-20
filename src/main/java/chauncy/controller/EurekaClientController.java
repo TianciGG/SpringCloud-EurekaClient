@@ -12,7 +12,7 @@ public class EurekaClientController {
 	String port;
 
 	@RequestMapping("/client")
-	public String client(@RequestParam String name) {
+	public String client(@RequestParam("name") String name) {
 		return "name:" + name + ",from port:" + port;
 	}
 
